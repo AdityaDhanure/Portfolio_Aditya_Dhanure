@@ -1,4 +1,4 @@
-import { SkillCard } from "./skillCard"
+import { SkillCard } from "./SkillCard";
 import { LogoCard } from "./LogoCard";
 
 import FE from '../assets/FE.png';

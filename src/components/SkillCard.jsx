@@ -36,9 +36,18 @@ export const SkillCard = ({logo, skillName, description}) => {
             ref={ref2}
             variants={skillVariant}
             animate={controls}
-            ><div className="w-10 h-10" id="img"   
+            whileHover={"hover"}
+            ><motion.div className="w-10 h-10" id="img"  
+                variants={{
+                    hover:{
+                    scale: 1.2,
+                    transition: {
+                        duration: 0.15,
+                        }
+                    }
+                }}
                 ><img src={logo} alt={"logo"} />
-            </div>
+            </motion.div>
             <div className="text-2xl font-bold py-4">{skillName}</div>
             <div className="text-greyText h-28">{description}</div>
         </motion.div>
