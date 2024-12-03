@@ -13,15 +13,15 @@ export const ProjectSection = () => {
 
     return <div>
         <section className="text-white h-full pt-5" id="projects">
-            <div className=" my-24 mx-20 flex gap-6">
+            <div className=" my-24 mx-5 md:mx-8 lg:mx-20 flex gap-6">
 
-                <div className="w-1/2 h-sreen ">
+                <div className="w-1/2  ">
                     <div className="">
                         <div>
                             <p className="font-semibold text-greyText py-2">MY PROJECTS</p>
                         </div>
                         <div>
-                            <p className="text-6xl font-bold font-mono tracking-tighter pb-16">Work that I've done till now!</p>
+                            <p className="text-3xl md:text-5xl lg:text-6xl  font-bold font-mono tracking-tighter pb-16">Work that I've done till now!</p>
                         </div>
                     </div>
                     <div>
@@ -46,7 +46,7 @@ export const ProjectSection = () => {
                         
                     </div>
                     <div className="flex justify-center py-16 ">
-                            <motion.div className=" py-5 w-60 text-center font-bold border border-indigo-700 hover:bg-indigo-700 hover:cursor-context-menu" 
+                            <motion.div className="py-3 md:py-4 lg:py-5  w-36 md:w-44 lg:w-60  text-xs md:text-md lg:text-lg  text-center font-bold border border-indigo-700 hover:bg-indigo-700 hover:cursor-context-menu" 
                                 animate = {{y: display ? 0 : 100, opacity: display ? 1 : 0}}
                                 onClick={() => setDisplay(false)}
                                 whileHover={{y: -3, transition: {duration: 0.1}}}

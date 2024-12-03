@@ -5,7 +5,7 @@ import './App.css'
 
 function App() {
 
-  return <div className="bg-black">
+  return <div className="bg-black w-full">
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Landing />} />
